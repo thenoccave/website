@@ -1,5 +1,5 @@
 # The Noc Cave
-This is the source code for mkdocs to generate [thenoccave.com](https://www.thenoccave.com.au)
+This is the source code for mkdocs to generate [thenoccave.com](https://www.thenoccave.com)
 
 If you find an issue then please either raise and issue or submit a pull request and it will be gladely accepted.
 
