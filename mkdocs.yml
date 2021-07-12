@@ -1,0 +1,5 @@
+site_name: The Noc Cave
+site_url: https://www.thenoccave.com
+dev_addr: 0.0.0.0:8080
+theme:
+  name: material
