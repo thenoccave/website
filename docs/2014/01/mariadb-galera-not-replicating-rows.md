@@ -1,5 +1,5 @@
 # MariaDB Galera Not Replicating Rows
-After recently getting a MariaDB Galera cluster up and running (https://www.thenoccave.com/2013/12/30/mariadb-galera-cluster-ha-proxy-keepalived-centos-6/) we decided to move some none essential databases across to it as a test.
+After recently getting a MariaDB Galera cluster up and running [Mariadb Galera Cluster HA Proxy Keepalived Centos 6](https://www.thenoccave.com/2013/12/30/mariadb-galera-cluster-ha-proxy-keepalived-centos-6) we decided to move some none essential databases across to it as a test.
 
 After moving a couple of Drupal sites without issue we decided to move our Piwik Analytics database and that is when we started hitting issues. We were just using mysqldump to dump to a file then importing into into MariaDB.
 
