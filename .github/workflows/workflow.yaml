@@ -1,3 +1,4 @@
+#Borrowed heavily from https://github.com/thomasattree/mkdocs2S3 but setup with materials theme
 name: DeployToS3
 on:
   push:
@@ -13,6 +14,23 @@ jobs:
       run: |
         pip install --quiet --no-cache-dir awscli
         pip install --quiet --no-cache-dir mkdocs mkdocs-material
+        mkdocs build
+        aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
+        ${AWS_ACCESS_KEY_ID}
+        ${AWS_SECRET_ACCESS_KEY}
+        ${AWS_REGION}
+        text
+        EOF
+        sh -c "aws s3 sync site s3://${AWS_S3_BUCKET}/ \
+          --profile s3-sync-action \
+          --no-progress \
+          $*"
+        aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
+        null
+        null
+        null
+        text
+        EOF
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
