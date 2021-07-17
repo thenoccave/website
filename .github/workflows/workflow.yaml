@@ -29,6 +29,9 @@ jobs:
           --profile s3-sync-action \
           --no-progress \
           $*"
+        sh -c "aws cloudfront create-invalidation \
+          --distribution-id E1WKE9HDXDYFOY \
+          --paths '/*'"
         aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
         null
         null
