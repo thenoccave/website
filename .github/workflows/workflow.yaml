@@ -25,6 +25,10 @@ jobs:
           --profile s3-sync-action \
           --no-progress \
           $*"
+        sh -c "aws s3 sync redirects.json s3://${AWS_S3_BUCKET}/ \
+          --profile s3-sync-action \
+          --no-progress \
+          $*"
         aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
         null
         null
