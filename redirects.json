@@ -21,5 +21,6 @@
     "/2012/03/28/centos-6-pxe-server": { "to": "/2012/03/centos-6-pxe-server/", "statusCode": 301 },
     "/2012/01/04/centos-6-console-access": { "to": "/2012/03/centos-6-console-access/", "statusCode": 301 },
     "/2011/10/17/freeswitch-queues-with-mod_callcenter": { "to": "/2011/10/freeswitch-queues-with-mod_callcenter/", "statusCode": 301 },
-    "/2011/09/15/linksys-spa-phones-not-hanging-up": { "to": "/2011/09/linksys-spa-phones-not-hanging-up/", "statusCode": 301 }
+    "/2011/09/15/linksys-spa-phones-not-hanging-up": { "to": "/2011/09/linksys-spa-phones-not-hanging-up/", "statusCode": 301 },
+    "/2015/01/08/drupal-8-add-the-current-title-to-the-breadcrumb/": { "to": "/", "statusCode": 301 }
   }
