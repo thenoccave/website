@@ -5,7 +5,7 @@ theme:
   name: material
 markdown_extensions:
   - admonition
-  extra:
+extra:
   analytics:
     provider: google
     property: UA-11927504-1
