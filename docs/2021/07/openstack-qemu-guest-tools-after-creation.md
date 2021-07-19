@@ -1,7 +1,7 @@
 # Openstack qemu guest agent after instance creation
----
-Note: To get this to work involves a hacky fix to make manual changes to the Openstack database. If you know of a way to modify system metadata on Openstack please let me know by raising an issue at [https://github.com/thenoccave/website/issues](https://github.com/thenoccave/website/issues)
----
+!!! note
+    To get this to work involves a hacky fix to make manual changes to the Openstack database. If you know of a way to modify system metadata on Openstack please let me know by raising an issue at [https://github.com/thenoccave/website/issues](https://github.com/thenoccave/website/issues)
+
 When doing some testing on Openstack I realised I had deployed instances without setting the metadata on the image to ensure that the serial device is enabled for the qemu-guest-agent.
 
 When there is a metadata entry for hw_qemu_guest_agent=yes on the image, when an instance is deployed from it a special serial device is deployed to allow the guest tools to talk to the host.

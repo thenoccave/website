@@ -3,7 +3,9 @@ site_url: https://www.thenoccave.com
 dev_addr: 0.0.0.0:8080
 theme:
   name: material
-extra:
+markdown_extensions:
+  - admonition
+  extra:
   analytics:
     provider: google
     property: UA-11927504-1
